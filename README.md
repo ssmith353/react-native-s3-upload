@@ -5,7 +5,7 @@
 Default link will be
 
 ```javascript
-`https://s3.${options.region}.amazonaws.com/${options.bucket}/`
+`https://${options.bucket}.s3-${options.region}${AWS_DEFAULT_S3_HOST}`
 ```
 
 React Native AWS3 is a module for uploading files to S3. Unlike other libraries out there, there are no native dependencies.
@@ -44,7 +44,7 @@ The user associated with the `accessKey` and `secretKey` you use must have the a
 ## Example
 
 ```javascript
-import { RNS3 } from 'react-native-s3-upload';
+import { RNS3 } from 'react-native-s3-upload-new';
 
 const file = {
   // `uri` can also be a file system path (i.e. file://)
@@ -118,11 +118,6 @@ RNS3.put(file, options)
 RNS3.put(file, option)
   .abort();
 ```
-
-## TODO
-
-- ~~[ ] Support `DeleteObject` and (authenticated) `GetObject` operations.~~ I am not planning it.
-
 
 ## License
 

@@ -1,9 +1,9 @@
 {
-  "name": "react-native-s3-upload",
-  "version": "0.0.12",
-  "description": "Pure JavaScript react native library for uploading to AWS S3",
+  "name": "react-native-s3-upload-new",
+  "version": "0.0.13",
+  "description": "Pure JavaScript react native library for uploading to AWS S3, with updated options",
   "author": {
-    "name": "Yeshu Kochher <yeshu@outlook.in>"
+    "name": "Steven Smith <ssmith@happymoney.com>"
   },
   "keywords": [
     "react",
@@ -47,10 +47,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/theyeshu/react-native-s3-upload"
+    "url": "https://github.com/ssmith353/react-native-s3-upload"
   },
   "bugs": {
-    "url": "https://github.com/theyeshu/react-native-s3-upload/issues"
+    "url": "https://github.com/ssmith353/react-native-s3-upload/issues"
   },
   "license": "MIT"
 }

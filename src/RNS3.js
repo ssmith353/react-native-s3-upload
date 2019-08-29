@@ -5,7 +5,7 @@
 import { Request } from './Request'
 import { S3Policy } from './S3Policy'
 
-const AWS_DEFAULT_S3_HOST = 's3.amazonaws.com'
+const AWS_DEFAULT_S3_HOST = '.amazonaws.com'
 
 const EXPECTED_RESPONSE_KEY_VALUE_RE = {
   key: /<Key>(.*)<\/Key>/,
@@ -38,7 +38,8 @@ export class RNS3 {
       contentType: file.type
     }
 
-    const url = `https://s3.${options.region}.amazonaws.com/${options.bucket}/`
+    const url = `https://${options.bucket}.s3-${options.region}${AWS_DEFAULT_S3_HOST}/`;
+
     const method = "POST"
     const policy = S3Policy.generate(options)
 

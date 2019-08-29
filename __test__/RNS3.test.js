@@ -57,7 +57,7 @@ describe('RNS3.put', () => {
 
     const requestCreateMock = Request.create.mock
     expect(requestCreateMock.calls.length).toBe(1)
-    expect(requestCreateMock.calls[0][0]).toBe('https://s3.us-east-1.amazonaws.com/my-s3-bucket/')
+    expect(requestCreateMock.calls[0][0]).toBe('https://my-s3-bucket.s3-us-east-1.amazonaws.com/')
     expect(requestCreateMock.calls[0][1]).toBe('POST')
     expect(requestCreateMock.calls[0][2]).toBe(policy)
 
@@ -95,7 +95,7 @@ describe('RNS3.put', () => {
 
       const requestCreateMock = Request.create.mock
       expect(requestCreateMock.calls.length).toBe(1)
-      expect(requestCreateMock.calls[0][0]).toBe('https://s3.us-east-1.amazonaws.com/my-s3-bucket/')
+      expect(requestCreateMock.calls[0][0]).toBe('https://my-s3-bucket.s3-us-east-1.amazonaws.com/')
       expect(requestCreateMock.calls[0][1]).toBe('POST')
       expect(requestCreateMock.calls[0][2]).toBe(policy)
 
@@ -134,7 +134,7 @@ describe('RNS3.put', () => {
 
       const requestCreateMock = Request.create.mock
       expect(requestCreateMock.calls.length).toBe(1)
-      expect(requestCreateMock.calls[0][0]).toBe('https://s3.us-east-1.amazonaws.com/my-s3-bucket/')
+      expect(requestCreateMock.calls[0][0]).toBe('https://my-s3-bucket.s3-us-east-1.amazonaws.com/')
       expect(requestCreateMock.calls[0][1]).toBe('POST')
       expect(requestCreateMock.calls[0][2]).toBe(policy)
 
@@ -187,7 +187,7 @@ describe('RNS3.put', () => {
 
       const requestCreateMock = Request.create.mock
       expect(requestCreateMock.calls.length).toBe(1)
-      expect(requestCreateMock.calls[0][0]).toBe('https://s3.us-east-1.amazonaws.com/my-s3-bucket/')
+      expect(requestCreateMock.calls[0][0]).toBe('https://my-s3-bucket.s3-us-east-1.amazonaws.com/')
       expect(requestCreateMock.calls[0][1]).toBe('POST')
       expect(requestCreateMock.calls[0][2]).toBe(policy)
 
